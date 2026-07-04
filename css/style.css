@@ -1,1 +1,5 @@
 @import url(./variables.css);
+
+h1 {
+    font-family: Encode;
+}
