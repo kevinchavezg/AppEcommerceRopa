@@ -1,1 +1,41 @@
-@import url(./variables.css);
+@import url(variables.css);
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font);
+}
+
+h2 {
+    color: var(--color05);
+}
+
+h4 {
+    color: var(--color02);
+}
+
+.filtros button {
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.catalogo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr));
+    gap: 20px;
+}
+
+.producto {
+    display: flex;
+    flex-direction: column;
+}
+
+.producto img {
+    width: 100;
+    border-radius: 20px;
+}
