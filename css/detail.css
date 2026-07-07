@@ -98,3 +98,36 @@ p {
     cursor: pointer;
 }
 
+.cart {
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
+    width: 500px;
+    height: 70px;
+    font-family: var(--font);
+    background-color: var(--color01);
+    color: var(--color04);
+    font-size: large;
+    text-align: 50%;
+}
+
+.cart img {
+    align-items: center;
+    width: 70px;
+}
+
+@media (min-width: 761px) {
+    .detalleImg img {
+        width: 500px;
+    }
+}
+
+@media (min-width: 991px) {
+    .detalleImg img {
+        width: 500px;
+    }
+
+    .detalle {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
