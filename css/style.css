@@ -45,6 +45,25 @@ header div {
     border-radius: 50%;
 }
 
+nav {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin: 10px;
+    position:sticky;
+    top: 90%;
+    right: 0;
+    justify-content: space-between;
+    padding: 20px;
+    z-index: 100;
+}
+
+menu {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
 .filtros {
     display: flex;
     gap: 10px;
@@ -85,7 +104,7 @@ header div {
     display: flex;
     gap: 10px;
     margin: 10px;
-    
+    padding-top: 25px;
 }
 
 .categorias button {
