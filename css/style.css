@@ -30,23 +30,22 @@ header {
 header div {
     display: flex;
     flex-direction: column;
-    margin: 8px;
+    margin: 10px;
 }
 
 .usuario {
-    align-items: right;
-    align-text: right;
+    align-items:end;
 }
 
 .usuario img {
-    width: 30px;
+    width: 45px;
     border-radius: 50%;
 }
 
 .filtros {
     display: flex;
     gap: 10px;
-    margin: 8px;
+    margin: 10px;
 }
 
 .filtros input {
@@ -78,8 +77,9 @@ header div {
 
 .catalogo {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+    margin: 10px;
 }
 
 .producto {
@@ -89,6 +89,19 @@ header div {
 }
 
 .producto img {
-    width: 100;
+    width: 100%;
     border-radius: 20px;
 }
+
+@media (min-width: 761px) {
+    .catalogo {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 991px) {
+    .catalogo {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
