@@ -12,14 +12,17 @@ body {
 
 h2 {
     color: var(--color05);
+    padding: 5px;
 }
 
 h4 {
     color: var(--color02);
+    padding: 5px;
 }
 
 h5 {
     color: var(--color02);
+    padding: 5px;
 }
 
 header {
@@ -58,6 +61,7 @@ header div {
     background-size: 25px;
     background-repeat: no-repeat;
     background-position: left center;
+    width: 100%;
 }
 
 .filtros button {
@@ -93,13 +97,28 @@ header div {
     border-radius: 20px;
 }
 
+.producto div {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding-top: 10px;
+}
+
 @media (min-width: 761px) {
+    .filtros input {
+        width: 300px;
+    }
+
     .catalogo {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
 @media (min-width: 991px) {
+    .filtros input {
+        width: 300px;
+    }
+
     .catalogo {
         grid-template-columns: repeat(4, 1fr);
     }
