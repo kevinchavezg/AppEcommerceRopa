@@ -18,6 +18,32 @@ h4 {
     color: var(--color02);
 }
 
+header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+header div {
+    display: flex;
+    flex-direction: column;
+}
+
+.usuario {
+    align-items: right;
+}
+
+.usuario img {
+    width: 30px;
+    border-radius: 50%;
+}
+
+.filtros input {
+    border: 1px solid;
+    border-color: var(--color03);
+    border-radius: 5px;
+    padding: 10px;
+}
+
 .filtros button {
     border: none;
     border-radius: 20px;
@@ -26,16 +52,21 @@ h4 {
 
 .catalogo {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
 
 .producto {
     display: flex;
     flex-direction: column;
+    border-radius: 15px;
 }
 
 .producto img {
     width: 100;
+    border-radius: 20px;
+}
+
+img {
     border-radius: 20px;
 }
