@@ -109,10 +109,11 @@ p {
     color: var(--color04);
     font-size: large;
     text-align: 50%;
+    align-items: center;
+    justify-content: center;
 }
 
 .cart img {
-    align-items: center;
     width: 70px;
 }
 
