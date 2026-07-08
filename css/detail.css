@@ -90,10 +90,10 @@ p {
     height: 50px;
     font-family: var(--font);
     font-size: 30px;
-    background-color: var(--color04);
-    border: 1 solid;
+    background-color: white;
+    border: 1px solid;
+    border-color: var(--color03);
     color: var(--color05);
-    border: none;
     border-radius: 50%;
     cursor: pointer;
 }
