@@ -68,6 +68,7 @@ header div {
     gap: 10px;
     justify-content: space-between;
     align-items: center;
+    padding: 10px;
 }
 
 .itemInfo {
@@ -142,6 +143,59 @@ header div {
 
 .total {
     padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.subtotal {
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+nav {
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.menu {
+    background-color: var(--color01);
+    border-radius: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;   
+    position:initial;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+    padding: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.menu li {
+    display: flex;
+    flex: 1;
+    cursor: pointer;
+    color: var(--color04);
+    justify-content: center;
+    text-align: center;
+}
+
+.menu li img {
+    width: 85px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+footer {
+    padding-top: 100px;
 }
 
 @media (min-width: 761px) {
