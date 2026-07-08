@@ -1,1 +1,79 @@
 @import url(./variables.css);
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font);
+    background-color: white;
+}
+
+h2 {
+    color: var(--color05)
+}
+
+header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-bottom: 40px;
+}
+
+header div {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    gap: 10px;
+}
+
+.volver {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: var(--color05);
+    text-decoration: none;
+    border: none;
+    border-radius: 50%;
+    align-items: center;
+    cursor: pointer;
+}
+
+.volver img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.items {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.itemInfo {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.itemInfo2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media (min-width: 761px) {
+    .items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
