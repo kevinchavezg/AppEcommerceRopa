@@ -12,8 +12,8 @@ body {
 }
 
 .detalle {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-top: 20px;
@@ -55,7 +55,7 @@ h1 {
     padding-top: 20px;
 }
 
-p {
+.calificacion p {
     padding-top: 10px;
     color: var(--color03)
 }
@@ -69,9 +69,11 @@ p {
 }
 
 .calificacion {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: row;
     align-items: left;
+    justify-content: center;
+    gap: 20px;
 }
 
 .detalleInfo div p {
@@ -83,6 +85,8 @@ p {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
+    justify-content: space-between;
+    gap: 20px;
 }
 
 .cantidad button {
@@ -102,6 +106,23 @@ p {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.tallas2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px
+}
+
+.tallas2 {
+    padding: 20px;
+    margin: 20px;
 }
 
 .tallasBotones {
@@ -111,6 +132,7 @@ p {
     justify-content: center;
     gap: 10px;
 }
+
 
 .tallasBotones button {
     width: 40px;
@@ -125,6 +147,10 @@ p {
     cursor: pointer;
 }
 
+.tallasBotones button:active {
+    background-color: var(--color03);
+}
+
 .colorBotones button{
     width: 40px;
     height: 40px;
@@ -135,6 +161,11 @@ p {
     color: var(--color05);
     border-radius: 50%;
     cursor: pointer;
+}
+
+.colorBotones button:active {
+    border-color: gold;
+    border: 3px solid;
 }
 
 .gris {
@@ -188,7 +219,6 @@ nav {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;   
-    position:initial;
     justify-content: center;
     align-items: center;
     place-items: center;
