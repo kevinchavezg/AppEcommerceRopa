@@ -98,6 +98,58 @@ p {
     cursor: pointer;
 }
 
+.tallas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.tallasBotones {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.tallasBotones button {
+    width: 50px;
+    height: 50px;
+    font-family: var(--font);
+    font-size: 30px;
+    background-color: white;
+    border: 1px solid;
+    border-color: var(--color03);
+    color: var(--color05);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.colorBotones button{
+    width: 50px;
+    height: 50px;
+    font-family: var(--font);
+    font-size: 30px;
+    border: 1px solid;
+    border-color: var(--color03);
+    color: var(--color05);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.gris {
+    background-color: gray;
+}
+
+.grisOscuro {
+    background-color: darkgrey;
+}
+
+.negro {
+    background-color: black;
+}
+
+
 .cart {
     border: none;
     border-radius: 35px;
@@ -127,6 +179,7 @@ p {
 
 nav {
     padding: 20px;
+    cursor: pointer;
 }
 
 .menu {
