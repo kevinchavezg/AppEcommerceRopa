@@ -11,6 +11,7 @@ body {
     background-color: white;
 }
 
+
 h2 {
     color: var(--color05);
     padding: 5px;
@@ -96,38 +97,40 @@ header div {
     width: 130px;
     height: 50px;
     font-family: var(--font);
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    display: inline-flex;
+}
+
+.categorias button img {
+    width: 40px;
+    height: 40px;
 }
 
 .all {
     background-color: var(--color01);
     color: var(--color04);
-    background-image: url('../storage/img/all.png');
-    background-repeat: no-repeat;
-    padding-left: 30px;
+    padding-left: 5px;
+
 }
 
 .dress {
     background-color: var(--color04);
     color: var(--color05);
-    background-image: url('../storage/img/dress.png');
-    background-repeat: no-repeat;
-    padding-left: 40px;
+    padding-left: 5px;
 }
 
 .tshirt {
     background-color: var(--color04);
     color: var(--color05);
-    background-image: url('../storage/img/shirt.png');
-    background-repeat: no-repeat;
-    padding-left: 60px;
+    padding-left: 5px;
 }
 
 .pants {
     background-color: var(--color04);
     color: var(--color05);
-    background-image: url('../storage/img/pants.png');
-    background-repeat: no-repeat;
-    padding-left: 60px;
+    padding-left: 5px;
 }
 
 .catalogo {
@@ -141,6 +144,10 @@ header div {
     display: flex;
     flex-direction: column;
     border-radius: 15px;
+}
+
+.producto img:hover {
+    width: 104%;
 }
 
 .producto img {
@@ -182,27 +189,36 @@ header div {
 .fav:checked + .favLabel {
     background-image: url('../storage/img/favOn.png');
 }*/
+.contenedorMenu {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    transform: translateX(15vw)
+}
 
 nav {
     padding: 20px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
 }
 
 .menu {
     background-color: var(--color01);
     border-radius: 50px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    /*grid-template-columns: repeat(4, 1fr);*/
     gap: 20px;   
-    position:initial;
+    /*position:initial;*/
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .menu li {
     display: flex;
     flex: 1;
     cursor: pointer;
+    align-items: center;
+    justify-content: center;
 }
 
 .menu li img {
@@ -227,6 +243,10 @@ footer {
     .catalogo {
         grid-template-columns: repeat(3, 1fr);
     }
+    
+    .contenedorMenu {
+        transform: translateX(25vw)
+    }
 }
 
 @media (min-width: 991px) {
@@ -236,6 +256,10 @@ footer {
 
     .catalogo {
         grid-template-columns: repeat(4, 1fr);
+    }
+
+    .contenedorMenu {
+        transform: translateX(35vw)
     }
 }
 
