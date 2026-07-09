@@ -182,27 +182,37 @@ header div {
 .fav:checked + .favLabel {
     background-image: url('../storage/img/favOn.png');
 }*/
+.contenedorMenu {
+    position: fixed;
+    bottom: 0;
+    
+    display: flex;
+    justify-content: center;
+    transform: translateX(15vw)
+}
 
 nav {
     padding: 20px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
 }
 
 .menu {
     background-color: var(--color01);
     border-radius: 50px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    /*grid-template-columns: repeat(4, 1fr);*/
     gap: 20px;   
-    position:initial;
+    /*position:initial;*/
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .menu li {
     display: flex;
     flex: 1;
     cursor: pointer;
+    align-items: center;
+    justify-content: center;
 }
 
 .menu li img {
@@ -227,6 +237,10 @@ footer {
     .catalogo {
         grid-template-columns: repeat(3, 1fr);
     }
+    
+    .contenedorMenu {
+        transform: translateX(25vw)
+    }
 }
 
 @media (min-width: 991px) {
@@ -236,6 +250,10 @@ footer {
 
     .catalogo {
         grid-template-columns: repeat(4, 1fr);
+    }
+
+    .contenedorMenu {
+        transform: translateX(35vw)
     }
 }
 

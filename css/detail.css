@@ -117,11 +117,16 @@ p {
     width: 70px;
 }
 
+.contenedorMenu {
+    position: fixed;
+    bottom: 0;  
+    display: flex;
+    justify-content: center;
+    transform: translateX(15vw)
+}
+
 nav {
     padding: 20px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
 }
 
 .menu {
@@ -162,6 +167,10 @@ footer {
     .detalleImg img {
         width: 500px;
     }
+
+    .contenedorMenu {
+        transform: translateX(25vw)
+    }
 }
 
 @media (min-width: 991px) {
@@ -171,5 +180,9 @@ footer {
 
     .detalle {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contenedorMenu {
+        transform: translateX(35vw)
     }
 }
