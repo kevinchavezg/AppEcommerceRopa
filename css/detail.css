@@ -98,6 +98,58 @@ p {
     cursor: pointer;
 }
 
+.tallas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.tallasBotones {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.tallasBotones button {
+    width: 40px;
+    height: 40px;
+    font-family: var(--font);
+    font-size: 30px;
+    background-color: white;
+    border: 1px solid;
+    border-color: var(--color03);
+    color: var(--color05);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.colorBotones button{
+    width: 40px;
+    height: 40px;
+    font-family: var(--font);
+    font-size: 30px;
+    border: 1px solid;
+    border-color: var(--color03);
+    color: var(--color05);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.gris {
+    background-color: gray;
+}
+
+.grisOscuro {
+    background-color: darkgrey;
+}
+
+.negro {
+    background-color: black;
+}
+
+
 .cart {
     border: none;
     border-radius: 35px;
@@ -117,11 +169,17 @@ p {
     width: 70px;
 }
 
+.contenedorMenu {
+    position: fixed;
+    bottom: 0;  
+    display: flex;
+    justify-content: center;
+    transform: translateX(15vw)
+}
+
 nav {
     padding: 20px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
+    cursor: pointer;
 }
 
 .menu {
@@ -162,6 +220,10 @@ footer {
     .detalleImg img {
         width: 500px;
     }
+
+    .contenedorMenu {
+        transform: translateX(25vw)
+    }
 }
 
 @media (min-width: 991px) {
@@ -171,5 +233,9 @@ footer {
 
     .detalle {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contenedorMenu {
+        transform: translateX(35vw)
     }
 }
