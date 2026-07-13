@@ -12,13 +12,15 @@ body {
 }
 
 .detalle {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
     align-items: center;
     justify-content: center;
     margin-top: 20px;
     padding: 10px;
     gap: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .volver {
@@ -56,7 +58,6 @@ h1 {
 }
 
 .calificacion p {
-    padding-top: 10px;
     color: var(--color03)
 }
 
@@ -82,10 +83,11 @@ h1 {
 }
 
 .cantidad {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    text-align: center;
     gap: 20px;
 }
 
@@ -120,11 +122,6 @@ h1 {
     margin: 20px
 }
 
-.tallas2 {
-    padding: 20px;
-    margin: 20px;
-}
-
 .tallasBotones {
     display: flex;
     flex-direction: row;
@@ -149,6 +146,12 @@ h1 {
 
 .tallasBotones button:active {
     background-color: var(--color03);
+}
+
+.colorBotones {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
 }
 
 .colorBotones button{
@@ -204,8 +207,10 @@ h1 {
     position: fixed;
     bottom: 0;  
     display: flex;
+    
     justify-content: center;
-    transform: translateX(15vw)
+    left: 30%;
+    right: 30%;
 }
 
 nav {
@@ -216,12 +221,15 @@ nav {
 .menu {
     background-color: var(--color01);
     border-radius: 50px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
     gap: 20px;   
     justify-content: center;
     align-items: center;
-    place-items: center;
+    display: flex;
+    flex: 1;
+    cursor: pointer;
+    color: var(--color04);
+    justify-content: center;
 }
 
 .menu li {
@@ -233,13 +241,24 @@ nav {
 }
 
 .menu li img {
-    width: 85px;
+    width: 75px;
     border-radius: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-decoration: none;
+}
+
+.menu li a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 10px;
+    font-family: var(--font);
+    color: var(--color04);
 }
 
 footer {
@@ -251,9 +270,6 @@ footer {
         width: 500px;
     }
 
-    .contenedorMenu {
-        transform: translateX(25vw)
-    }
 }
 
 @media (min-width: 991px) {
@@ -265,7 +281,4 @@ footer {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .contenedorMenu {
-        transform: translateX(35vw)
-    }
 }
