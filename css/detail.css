@@ -204,6 +204,7 @@ h1 {
     position: fixed;
     bottom: 0;  
     display: flex;
+    flex-direction: column;
     justify-content: center;
     left: 30%;
     right: 30%;
@@ -212,17 +213,22 @@ h1 {
 nav {
     padding: 20px;
     cursor: pointer;
+
 }
 
 .menu {
     background-color: var(--color01);
     border-radius: 50px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
     gap: 20px;   
     justify-content: center;
     align-items: center;
-    place-items: center;
+    display: flex;
+    flex: 1;
+    cursor: pointer;
+    color: var(--color04);
+    justify-content: center;
+
 }
 
 .menu li {
@@ -231,14 +237,21 @@ nav {
     cursor: pointer;
     color: var(--color04);
     justify-content: center;
-    padding: 10px;
 }
 
 .menu li img {
-    width: 85px;
+    width: 75px;
     border-radius: 50px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.menu li a {
+    display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     text-decoration: none;
