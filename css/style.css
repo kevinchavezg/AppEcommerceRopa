@@ -47,6 +47,8 @@ header div {
     border-radius: 50%;
 }
 
+
+
 .filtros {
     display: flex;
     gap: 10px;
@@ -88,6 +90,7 @@ header div {
     gap: 10px;
     margin: 10px;
     padding-top: 25px;
+    
 }
 
 .categorias button {
@@ -201,11 +204,13 @@ header div {
     bottom: 0;
     display: flex;
     justify-content: center;
-    transform: translateX(15vw)
+    left: 30%;
+    right: 30%;
 }
 
 nav {
     padding: 20px;
+    width: 500px;
 }
 
 .menu {
@@ -249,22 +254,27 @@ footer {
         grid-template-columns: repeat(3, 1fr);
     }
     
-    .contenedorMenu {
-        transform: translateX(25vw)
-    }
 }
 
 @media (min-width: 991px) {
+    
     .filtros input {
         width: 350px;
+    }
+
+    .categorias {
+        padding-top: 0px;
+    }
+
+    .contenedorFiltros {
+        display: flex;
+        
+        margin: 10px;
     }
 
     .catalogo {
         grid-template-columns: repeat(4, 1fr);
     }
 
-    .contenedorMenu {
-        transform: translateX(35vw)
-    }
 }
 
