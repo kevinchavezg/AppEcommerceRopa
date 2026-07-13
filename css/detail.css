@@ -12,13 +12,15 @@ body {
 }
 
 .detalle {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
     align-items: center;
     justify-content: center;
     margin-top: 20px;
     padding: 10px;
     gap: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .volver {
@@ -56,7 +58,6 @@ h1 {
 }
 
 .calificacion p {
-    padding-top: 10px;
     color: var(--color03)
 }
 
@@ -82,10 +83,11 @@ h1 {
 }
 
 .cantidad {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    text-align: center;
     gap: 20px;
 }
 
@@ -120,11 +122,6 @@ h1 {
     margin: 20px
 }
 
-.tallas2 {
-    padding: 20px;
-    margin: 20px;
-}
-
 .tallasBotones {
     display: flex;
     flex-direction: row;
@@ -149,6 +146,12 @@ h1 {
 
 .tallasBotones button:active {
     background-color: var(--color03);
+}
+
+.colorBotones {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
 }
 
 .colorBotones button{
@@ -204,7 +207,7 @@ h1 {
     position: fixed;
     bottom: 0;  
     display: flex;
-    flex-direction: column;
+    
     justify-content: center;
     left: 30%;
     right: 30%;
@@ -213,7 +216,6 @@ h1 {
 nav {
     padding: 20px;
     cursor: pointer;
-
 }
 
 .menu {
@@ -228,7 +230,6 @@ nav {
     cursor: pointer;
     color: var(--color04);
     justify-content: center;
-
 }
 
 .menu li {
@@ -256,6 +257,8 @@ nav {
     justify-content: center;
     text-decoration: none;
     padding: 10px;
+    font-family: var(--font);
+    color: var(--color04);
 }
 
 footer {

@@ -47,6 +47,8 @@ header div {
     border-radius: 50%;
 }
 
+
+
 .filtros {
     display: flex;
     gap: 10px;
@@ -88,6 +90,7 @@ header div {
     gap: 10px;
     margin: 10px;
     padding-top: 25px;
+    
 }
 
 .categorias button {
@@ -254,8 +257,19 @@ footer {
 }
 
 @media (min-width: 991px) {
+    
     .filtros input {
         width: 350px;
+    }
+
+    .categorias {
+        padding-top: 0px;
+    }
+
+    .contenedorFiltros {
+        display: flex;
+        
+        margin: 10px;
     }
 
     .catalogo {

@@ -111,8 +111,9 @@ header div {
     padding: 10px;
     border-radius: 25px;
     background-color: var(--color04);
-    margin-left: 40px;
-    margin-right: 40px;
+    max-width: 500px;
+    margin: 20px auto;
+    align-items: center;
 }
 
 .card div {
@@ -169,8 +170,8 @@ nav {
 .menu {
     background-color: var(--color01);
     border-radius: 50px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    flex-direction: column;
     gap: 20px;   
     position:initial;
     justify-content: center;
@@ -205,23 +206,40 @@ footer {
 }
 
 @media (min-width: 761px) {
-    .items {
-        display: flex;
-    }
+    
 
     .shipping {
         text-align: left;
+        justify-content: center;
+        text-align: center;
     }
 
     .card {
         width: 500px;
+        justify-content: center;
+        text-align: center;
     }
     .card div {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .subtotal {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .total {
+        justify-content: center;
+        align-items: center;
         text-align: center;
     }
 
 }
 
 @media (min-width: 991px) {
-    
+    .items {
+        display: flex;
+        justify-content: center;
+    }
 }
