@@ -158,12 +158,12 @@ header div {
     bottom: 0;  
     display: flex;
     justify-content: center;
-    transform: translateX(15vw)
+    left: 30%;
+    right: 30%;
 }
 
 nav {
     padding: 20px;
-    
 }
 
 .menu {
@@ -219,13 +219,9 @@ footer {
     .card div {
         text-align: center;
     }
-    .contenedorMenu {
-        transform: translateX(25vw)
-    }
+
 }
 
 @media (min-width: 991px) {
-    .contenedorMenu {
-        transform: translateX(35vw)
-    }
+    
 }

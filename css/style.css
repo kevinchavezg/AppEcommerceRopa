@@ -201,7 +201,8 @@ header div {
     bottom: 0;
     display: flex;
     justify-content: center;
-    transform: translateX(15vw)
+    left: 30%;
+    right: 30%;
 }
 
 nav {
@@ -249,9 +250,6 @@ footer {
         grid-template-columns: repeat(3, 1fr);
     }
     
-    .contenedorMenu {
-        transform: translateX(25vw)
-    }
 }
 
 @media (min-width: 991px) {
@@ -263,8 +261,5 @@ footer {
         grid-template-columns: repeat(4, 1fr);
     }
 
-    .contenedorMenu {
-        transform: translateX(35vw)
-    }
 }
 
