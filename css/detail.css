@@ -41,6 +41,24 @@ body {
     border-radius: 50%;
 }
 
+.tallasSitio {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: var(--color05);
+    text-decoration: none;
+    border: none;
+    border-radius: 50%;
+    align-items: center;
+    cursor: pointer;
+}
+
+.tallasSitio img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
 .detalleImg {
     display: flex;
     justify-content: center;
