@@ -67,8 +67,12 @@ main section {
     right: 30%;
 }
 
-form label {
+form {
+    padding: 20px;
+}
 
+form label {
+    padding: 20px;
 }
 
 .table {
@@ -81,11 +85,17 @@ form label {
     border-radius: 10px;
     width: 100px;
     background-color: var(--color04);
+    font-size: large;
 }
 
-table tr:hover {
-    background-color: var(--color03);
+.filas {
+    text-align: center;
+}
 
+.filas:hover {
+    background-color: var(--color03);
+    font-size:x-large;
+    font-style: italic;
 }
 
 .contenedorMenu {
